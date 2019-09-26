@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <!-- Form merupakan salah satu bentuk halaman web yang digunakan untuk menerima masukan dari pengguna, 
+        untuk selanjutnya masukan dari pengguna tersebut diolah menggunakan bahasa pemrograman web, 
+        baik secara server side scripting(misalkan PHP dll) ataupun client-side scripting (javascript). -->
+        <head>
+            <title>Belajar Membuat Form</title>
+        </head>
+
+    <body>
+        <form action=" formulir.html" method="get">
+            <!-- Field adalah ruas yang dapat diisi dengan data.-->
+            <!-- Field nama diisi sesuai type nama, kemudian password juga diisi sesuai type password, begitu seterusnya -->
+            <!-- type merupakan type dari field.-->
+            <!-- name merupakan nama dari field yang akan menjadi kunci dan variabel di dalam program.-->
+        Nama: 
+        <input type="text" name="username"  />
+        <br />
+        Password: 
+        <input type="password" name="password" />
+        <br />
+
+        Jenis Kelamin :
+        <input type="radio" name="jenis_kelamin" value="laki-laki" />
+        Laki - Laki
+        <input type="radio" name="jenis_kelamin" value="perempuan" />
+        Perempuan
+        <br />
+
+        <!-- Checkbok untuk memilih sesuai data yang ada -->
+        Hobi: 
+        <input type="checkbox" name="hobi_baca" /> Olahraga
+        <input type="checkbox" name="hobi_nulis" /> Menulis
+        <input type="checkbox" name="hobi_mancing" /> Memancing
+        <input type="checkbox" name="hobi_nulis" /> Membaca Buku
+        <input type="checkbox" name="hobi_mancing" /> Tidur
+        <br />
+
+        Asal Kota:
+        <select name="asal_kota" >
+        <option value="Kota Sumenep"> Sumenep</option>
+        <option>Pamekasan</option>
+        <option value="Kota Semarang" selected>Samapng</option>
+        </select>
+        <br />
+
+        <!-- Value adalah nilai yang diberikan pada sebuah atribut.-->
+        komentar anda:
+        <textarea name="komentar" rows="5" cols="30">
+        </textarea>
+        <br />
+        <input type="submit" value="Mulai Proses!" >
+        </form>
+    </body>
+</html>
